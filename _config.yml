@@ -1,0 +1,39 @@
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
+
+# Site settings
+# These are used to personalize your new site. If you look in the HTML files,
+# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
+# You can create any custom variable you would like, and they will be accessible
+# in the templates via {{ site.myvariable }}.
+title: Miningbutikken.no
+email: post@miningbutikken.no
+description: Miningbutikken.no tilbyr kvalitetsvarer for mining av kryptovaluta. Hovedkort, strømforsyninger, splittere, kabler.
+baseurl: "/" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
+api_key: NzI5ZjcyNjctNjNhYS00NTExLTlhYmYtMDBiZmFkMGU2OTM2NjM2NTYyMTk3NTk4OTEwNzY2
+
+# Build settings
+markdown: kramdown
+
+collections:
+  products:
+    output: true
+
+exclude:
+  - admin/index.js
+  - webpack.config.js
+  - package.json
+  - README.md
+
+# Exclude from processing.
+# The following items will not be processed, by default. Create a custom list
+# to override the default setting.
+# exclude:
+#   - Gemfile
+#   - Gemfile.lock
+#   - node_modules
+#   - vendor/bundle/
+#   - vendor/cache/
+#   - vendor/gems/
+#   - vendor/ruby/

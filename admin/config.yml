@@ -1,0 +1,22 @@
+backend:
+  name: github
+  repo: ErusConsulting/miningbutikken.git
+  branch: master
+
+media_folder: "img/uploads"
+
+collections:
+  - name: "products"
+    label: "Products"
+    folder: "_products"
+    slug: "{{slug}}"
+    create: true
+    fields:
+        - {label: Name, name: name, widget: string}
+        - {label: SKU, name: sku, widget: string}
+        - {label: Price, name: price, widget: number}
+        - {label: Image, name: image, widget: image, required: false}
+        - {label: Slug, name: slug, widget: string}
+        - {label: Layout, name: layout, widget: hidden, default: productdetails}
+        - {label: Description, name: description, widget: string}
+        - {label: "Body", name: "body", widget: "markdown"}

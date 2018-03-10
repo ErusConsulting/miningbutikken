@@ -1,34 +1,7 @@
-<!DOCTYPE html>
-<html lang="no">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <title>miningbutikken</title>
-
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.css" />
-    <link rel="stylesheet" href="./css/main.css" />
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
-    <script src="https://cdn.snipcart.com/scripts/2.0/snipcart.js" data-api-key="NzI5ZjcyNjctNjNhYS00NTExLTlhYmYtMDBiZmFkMGU2OTM2NjM2NTYyMTk3NTk4OTEwNzY2" id="snipcart"></script>
-    <link href="https://cdn.snipcart.com/themes/2.0/base/snipcart.min.css" rel="stylesheet" type="text/css" />
-  </head>
-  <body>
-    <div class="hero is-fullheight">
-      <div id="app"></div>
-    </div>
-
-    <script src="/dist/build.js"></script>
-<!--
-
-<div class="snipcart-summary">
-    <a href="#" class="snipcart-user-email snipcart-user-profile">
-        Customer dashboard
-    </a>
-</div>
-
--->
-  </body>
-</html>
+---
+layout: products
+title: Store
+---
+{% for product in site.products %}
+  {% include product.html %}
+{% endfor %}

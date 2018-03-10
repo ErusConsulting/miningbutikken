@@ -1,0 +1,42 @@
+---
+layout: default
+head:
+  snipcart.html
+---
+<div class="section">
+  <div class="container">
+    <div class="columns" style="min-height: 800px">
+      <div class="column is-6">
+        <div class="image is-2by2">
+          <img src="{{ page.image }}" alt="{{ page.name }}" />
+        </div>
+      </div>
+      <div class="column is-5 is-offset-1">
+        <div class="title is-2">
+          {{ page.name }}
+        </div>
+        <p class="title is-3 has-text-muted">
+          kr. {{ page.price }},-
+        </p>
+        <hr />
+        <br />
+        <p>
+          {{ page.content }}
+        </p>
+        <br />
+        <br />
+        <p class="level">
+          <button
+              class="snipcart-add-item button is-large is-primary ievel-item has-text-centered"
+              data-item-name="{{ page.name }}"
+              data-item-id="{{ page.sku }}"
+              data-item-image="{{ page.image }}"
+              data-item-url="{{ site.baseurl }}"
+              data-item-price="{{ page.price }}">
+                  Kjøp nå
+          </button>
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
